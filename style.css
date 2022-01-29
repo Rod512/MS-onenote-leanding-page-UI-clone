@@ -1,0 +1,343 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "SegoeUI","Segoe UI",Segoe,"Segoe WP","Segoe UI Web Regular","Segoe UI Symbol","Helvetica Neue",-apple-system,Roboto,Helvetica,"BBAlpha Sans","S60 Sans",Arial,sans-serif !important;
+}
+
+.container{
+    margin: 0 7%;
+}
+.navigartion{
+    background-color: #333;
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img{
+    width: 9rem;
+    height: 3rem;
+}
+
+ul{
+    display: flex;
+    gap: 5px;
+    list-style: none;
+}
+
+ul li a{
+    padding: 7px 15px;
+    border: 1px solid white;
+    border-radius: 3px;
+    text-decoration: none;
+    color: white;
+}
+
+ul li a:hover{
+    text-decoration: underline;
+    color: gray;
+    border: 1px solid gray;
+}
+
+.open{
+    position: absolute;
+    top: 40%;
+}
+
+.banner{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(/img/headerbg.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.button{
+    margin-top: 2rem;
+}
+
+.button a{
+    padding: 10px 30px;
+    background-color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.button a:hover{
+    background-color: #E9EFF1;
+    text-decoration: underline;
+    color: purple;
+}
+
+.open h1{
+    font-weight: 300;
+    color: white;
+    font-size: 36px;
+    line-height: 50px;
+}
+
+.way{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    /* justify-items: start;
+    align-items: center; */
+}
+
+.way-text{
+    position: relative;
+}
+
+.text{
+    position: absolute;
+    top: 15%;
+}
+
+.way-text h2{
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 7rem;
+}
+
+.way-text p{
+    font-size: 18px;
+    font-weight: 20;
+    line-height: 1.5rem;
+    color: gray;
+}
+
+.way-img img{
+   width: 100%;
+}
+
+.collaborate{
+    position: relative;
+}
+
+.collaborate-text{
+    position: absolute;
+    top: 30%;
+    color: white;
+    width: 512px;
+}
+
+.collaborate-text h2{
+    font-size: 36px;
+    font-weight: 20;
+    line-height: 70px;
+}
+
+.collaborate-text p{
+    font-size: 18px;
+    font-weight: 20;
+}
+
+.collabrorate-img img{
+    width: 100%;
+}
+
+.think{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.think-text{
+    position: relative;
+}
+
+.title{
+    position: absolute;
+    top: 20%;
+    width: 450px;
+}
+
+.title h4{
+    font-size: 36px;
+    font-weight: 100;
+    line-height: 100px;
+}
+
+.title p{
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 25px;
+    color: gray;
+}
+
+.think-img img{
+    width: 100%;
+}
+
+.anywhere{
+    width: 100%;
+    height: auto;
+    background-color: #f7f7f7;;
+}
+.access{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.access-title{
+    position: relative;
+}
+
+.access-text{
+    position: absolute;
+    top: 15%;
+    width: 500px;
+}
+
+.access-text h4{
+    font-size: 36px;
+    font-weight: 100;
+    line-height: 90px;
+}
+
+.access-text p{
+    font-size: 18px;
+    font-weight: 100;
+    color: gray;
+    line-height: 30px;
+}
+
+.access-img img{
+    width: 100%;
+}
+
+.device ul li a{
+    color: gray;
+}
+
+
+
+@media only screen and (max-width: 600px){
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    ul{
+        display: flex;
+        gap: 5px;
+    }
+
+    ul .offer{
+        display: none;
+    }
+
+    ul li a{
+        padding: 5px 10px;
+        font-size: 10px;
+    }
+
+    .banner h1{
+        font-size: 24px;
+        line-height: 25px;
+    }
+
+    .button{
+        margin-top: 15px;
+    }
+
+    .button span{
+        display: none;
+    }
+
+    .banner a{
+        padding: 6px 40px;
+        font-size: 18px;
+    }
+
+    .banner a:hover{
+        background-color: #E9EFF1;
+        text-decoration: underline;
+        color: purple;
+    }
+
+    .way{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(2,1fr);
+        margin-top: 20px;
+    }
+
+    .way-text{
+        grid-row: 1/2;
+        /* position: relative; */
+    }
+
+    /* .way-text h2{
+        font-size: 22px;
+        line-height: 25px;
+    } */
+
+    .way-text p{
+        font-size: 12px;
+    }
+
+    .text{
+        position: absolute;
+        top: 2%;
+    }
+
+    .collaborate{
+        position: relative;
+        margin-top: 200px;
+    }
+
+    .collaborate-text{
+        position: absolute;
+        top: -100%;
+        color: black;
+        width: 80%;
+    }
+
+    .collaborate-text h2{
+        line-height: 35px;
+        font-size: 24px;
+    }
+
+    .collaborate-text p{
+        font-size: 12px;
+        line-height: 30px;
+    }
+
+    .think{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+
+    .title{
+        width: 300px;
+        top: 5%;
+    }
+
+    .title h4{
+        font-size: 22px;
+        line-height: 40px;
+    }
+
+    .title p{
+        font-size: 14px;
+    }
+
+    .access{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+
+    .access-title{
+        grid-row: 1/2;
+        width: 100%;
+    }
+
+
+}
