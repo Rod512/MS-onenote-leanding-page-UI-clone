@@ -1,7 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
-    font-family: "SegoeUI","Segoe UI",Segoe,"Segoe WP","Segoe UI Web Regular","Segoe UI Symbol","Helvetica Neue",-apple-system,Roboto,Helvetica,"BBAlpha Sans","S60 Sans",Arial,sans-serif !important;
+    font-family: "SegoeUI","Segoe UI",Segoe,"Segoe WP","Segoe UI Web Regular","Segoe UI Symbol","Helvetica Neue",-apple-system,Roboto,Helvetica,"BBAlpha Sans","S60 Sans",Arial,sans-serif;
 }
 
 .container{
@@ -23,13 +23,13 @@ nav{
     height: 3rem;
 }
 
-ul{
+nav ul{
     display: flex;
     gap: 5px;
     list-style: none;
 }
 
-ul li a{
+nav ul li a{
     padding: 7px 15px;
     border: 1px solid white;
     border-radius: 3px;
@@ -37,7 +37,7 @@ ul li a{
     color: white;
 }
 
-ul li a:hover{
+nav ul li a:hover{
     text-decoration: underline;
     color: gray;
     border: 1px solid gray;
@@ -62,7 +62,7 @@ ul li a:hover{
 }
 
 .button a{
-    padding: 10px 30px;
+    padding: 12px 50px;
     background-color: #fff;
     text-decoration: none;
     border-radius: 3px;
@@ -209,10 +209,208 @@ ul li a:hover{
     width: 100%;
 }
 
+
+
 .device ul li a{
     color: gray;
 }
 
+.comunication{
+    margin-left: 200px;
+}
+
+.logo-status{
+    display: flex;
+    gap: 70px;
+}
+
+.logo-detail i{
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: gray;
+}
+
+.logo-detail i:hover{
+    color: black;
+}
+
+.logo-detail p{
+    color: gray;
+}
+
+
+.logo-detail ul{
+    margin-top: 20px;
+    list-style: none;
+}
+
+.logo-detail ul li{
+    padding-top: 10px;
+}
+
+.logo-detail ul li a{
+    text-decoration: none;
+    color: gray;
+}
+
+.logo-detail ul li a:hover{
+    color: purple;
+    text-decoration: underline;
+}
+
+.office{
+    margin-top: 100px;
+    position: relative;
+}
+
+.office-text{
+    position: absolute;
+    top: 30%;
+    color: white;
+    width: 512px;
+}
+
+.office-text h2{
+    font-size: 36px;
+    font-weight: 20;
+    line-height: 70px;
+}
+
+.office-text p{
+    font-size: 18px;
+    font-weight: 20;
+}
+
+
+.office-text img{
+    width: 100px;
+}
+
+.office-img img{
+    width: 100%;
+}
+
+.classroom{
+    display: grid;
+   grid-template-columns: repeat(2,1fr);
+}
+
+.classroom-img img{
+    width: 100%;
+}
+
+.classroom-title h2{
+    font-weight: 100;
+    font-size: 32px;
+    color: gray;
+    line-height: 60px;
+}
+
+.classroom-title p{
+    font-weight: 100;
+    color: gray;
+    line-height: 25px;
+    width: 490px;
+    margin-bottom:30px;
+    margin-top: 20px;
+}
+
+.classroom-title a{
+    margin-top: 50px;
+    background-color: purple;
+    padding: 12px 40px;
+    color: #fff;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+.classroom-title a:hover{
+    text-decoration: underline;
+}
+
+.classroom-text{
+    position: relative;
+}
+
+.classroom-title{
+    position: absolute;
+    top: 30%;
+}
+
+.link{
+    /* display: grid;
+    grid-template-columns: repeat(2,1fr); */
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.useful-link{
+    display: flex;
+    gap: 10rem;
+}
+
+.social{
+    display: flex;
+    /* justify-content: end; */
+    gap: 25px;
+}
+
+.social i{
+    font-size: 30px;
+    color: gray;
+}
+
+.list-link p{
+    font-size: 18px;
+    padding-bottom: 15px;
+    color: gray;
+}
+
+.list-link ul li{
+    list-style: none;
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+.list-link ul li a{
+    text-decoration: none;
+    color: gray;
+}
+
+.list-link ul li a:hover{
+    color: purple;
+    text-decoration: underline;
+}
+
+footer{
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.languge{
+    display: flex;
+    justify-content: space-between;
+}
+
+.languge a{
+    color: gray;
+    text-decoration: none;
+}
+.languge i{
+    margin-right: 10px;
+}
+.languge a:hover{
+    color: purple;
+    text-decoration: underline;
+}
+
+.languge ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    color: gray;
+}
 
 
 @media only screen and (max-width: 600px){
@@ -278,12 +476,14 @@ ul li a:hover{
     } */
 
     .way-text p{
-        font-size: 12px;
+        font-size: 16px;
+        line-height: 25px;
     }
 
     .text{
         position: absolute;
         top: 2%;
+        width: 100%;
     }
 
     .collaborate{
@@ -293,19 +493,13 @@ ul li a:hover{
 
     .collaborate-text{
         position: absolute;
-        top: -100%;
+        top: -110%;
         color: black;
-        width: 80%;
+        width: 90%;
     }
 
     .collaborate-text h2{
-        line-height: 35px;
         font-size: 24px;
-    }
-
-    .collaborate-text p{
-        font-size: 12px;
-        line-height: 30px;
     }
 
     .think{
@@ -315,17 +509,8 @@ ul li a:hover{
     }
 
     .title{
-        width: 300px;
+        width: 100%;
         top: 5%;
-    }
-
-    .title h4{
-        font-size: 22px;
-        line-height: 40px;
-    }
-
-    .title p{
-        font-size: 14px;
     }
 
     .access{
@@ -336,8 +521,103 @@ ul li a:hover{
 
     .access-title{
         grid-row: 1/2;
+        /* width: 100%; */
+    }
+
+    .access-text{
         width: 100%;
     }
+
+    .access-text h4{
+       font-size: 24px;
+       line-height: 50px;
+    }
+
+    .logo-status{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .comunication{
+        margin-left: 80px;
+    }
+
+    .logo-detail ul li a{
+       padding-right: 10px;
+       padding-left:0;
+       border-right: 1px solid gray;
+    }
+
+    .office{
+        position: relative;
+        margin-top: 100px;
+    }
+
+    .office-text{
+        position: absolute;
+        top: -100%;
+        color: black;
+        width: 90%;
+        margin-top: 240px;
+    }
+
+    .office-img img{
+        margin-top: 170px;
+    }
+
+
+    .office-text h2{
+        font-size: 24px;
+    }
+
+    .classroom{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+
+    .classroom-text{
+        grid-row: 1/2;
+        width: 100%;
+        margin-bottom: 70px;
+    }
+
+    .classroom-title p{
+        width: 100%;
+
+    }
+
+    .link{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .social{
+        grid-row: 1/2;
+    }
+
+    .useful-link{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .list-link ul{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+    }
+
+    .languge a{
+        font-size: 10px;
+    }
+    .languge ul{
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
 
 
 }
